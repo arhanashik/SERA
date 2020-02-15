@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.info.view.activity.InfoActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="JOB TITLE HERE"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_job_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_similar_jobs"
+        android:text="@string/txt_job_description"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_similar_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_job_description"
+        app:layout_constraintBottom_toTopOf="@+id/btn_top_abilities"
+        android:text="@string/txt_similar_jobs"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_top_abilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_similar_jobs"
+        app:layout_constraintBottom_toTopOf="@+id/btn_work_activities"
+        android:text="@string/txt_top_abilities"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_work_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_top_abilities"
+        app:layout_constraintBottom_toTopOf="@+id/btn_work_styles"
+        android:text="@string/txt_work_activities"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_work_styles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_work_activities"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/txt_work_styles"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

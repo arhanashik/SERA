@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SERA</string>
+    <string name="txt_select_branch_of_service">What was your branch of service?</string>
+    <string name="txt_insert_mos">What was your MOS</string>
+    <string name="txt_or">OR</string>
+    <string name="hint_mos">MOS #</string>
+    <string name="hint_mos_title">MOS TITLE</string>
+    <string name="txt_job_description">Job Description</string>
+    <string name="txt_similar_jobs">Similar Jobs</string>
+    <string name="txt_work_styles">Work Styles</string>
+    <string name="txt_work_activities">Work Activities</string>
+    <string name="txt_top_abilities">Top Ablities</string>
+</resources>
